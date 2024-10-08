@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple QR code generator app using HTML, CSS, and JavaScript. It generates a QR code based on the user's input and displays it dynamically using an external QR code API. If the input field is empty, an error highlight is triggered.">
-    <meta name="keywords" content="QR code generator, JavaScript QR code, dynamic QR code, QR code API, online QR generator, generate QR code, simple QR generator, HTML QR code generator, free QR code tool, QR code input validation">
+    <meta name="description" content="An easy-to-use JavaScript toast notification system that shows success, error, and invalid input messages with icons. Simple to add to any project for user-friendly feedback and alerts.">
+    <meta name="keywords" content="JavaScript toast notifications, toast message system, success and error alerts, dynamic notifications, UI feedback system, customizable notifications, lightweight notification system, user input validation, notification popup, JavaScript UI components">
 
-    <meta property="og:title" content="Best QR Code Generator App JavaScript" />
-    <meta property="og:description" content="A simple QR code generator app using HTML, CSS, and JavaScript. It generates a QR code based on the user's input and displays it dynamically using an external QR code API. If the input field is empty, an error highlight is triggered." />
-    <meta property="og:image" content="./img/QR Code Generator App - HTML CSS JavaScript DOM Projects.png" />
+    <meta property="og:title" content="Toast Notification JavaScript" />
+    <meta property="og:description" content="An easy-to-use JavaScript toast notification system that shows success, error, and invalid input messages with icons. Simple to add to any project for user-friendly feedback and alerts." />
+    <meta property="og:image" content="./img/Toast-Notification-JavaScript.png" />
     <title>Best Toast Notification JavaScript DOM Project 2024</title>
 
     <link rel="icon" type="image/x-icon" href="./img/chbappy-cse-favicon.png">
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <div class="buttons">
-        <button>Success</button>
-        <button>Error</button>
-        <button>Invaild</button>
+        <button onclick="showToast(successMsg)">Success</button>
+        <button onclick="showToast(errorMsg)">Error</button>
+        <button onclick="showToast(invalidMsg)">Invaild</button>
     </div>
 
     <div id="toastBox"></div>
     
+    <script src="./app.js"></script>
 </body>
 </html>
